@@ -1,0 +1,10 @@
+{
+  "scenario1": {
+    "health": 60,
+    "hasPotion": false,
+    "enemyNearby": false,
+    "inSafeZone": true,
+    "treasureThreatLevel": "medium",
+    "stamina": 15
+  }
+}

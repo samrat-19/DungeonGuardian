@@ -1,0 +1,22 @@
+Rules:
+- Health 0-100: below 50 = low, above 70 = good
+- Stamina 0-50: above 10 = can fight
+- enemyNearby means danger
+- Priority:
+  1. Survive if health < 50
+  2. PrepareForBattle if hasPotion and stamina > 10
+  3. EliminateThreat if enemyNearby
+  4. ProtectTreasure if treasureThreatLevel is medium or high
+
+Choose the best goal from {GOALS} based on this world state:
+
+{state_prompt}
+
+Choose one goal only. Explain why.
+
+Reply with JSON:
+
+{{
+  "goal": "<one of: {GOALS}>",
+  "reason": "<why>"
+}}
